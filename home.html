@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Prachi Airlines</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background-image: url('img/image.jpg');
+  color:white;
+  font-family: arial;
+
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Sticky navbar - toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed). The sticky value is not supported in IE or Edge 15 and earlier versions. However, for these versions the navbar will inherit default position */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Active/current link */
+.navbar a.active {
+  background-color: #666;
+  color: white;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.side1 {
+  background-image: url('img/side.png');
+  width: 100%;
+  padding: 20px;
+}
+.side2 {
+  background-image: url('img/side2.jpg');
+  width: 100%;
+  padding: 20px;
+}
+.side3 {
+  background-image: url('img/side3.jpg');
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg1 {
+  background-image: url('img/singapore.jpg');
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg2 {
+  background-image: url('img/paris.jpg');
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg3 {
+  background-image: url('img/london.jpg');
+  width: 100%;
+  padding: 20px;
+}
+
+.fakeimg4 {
+  background-image: url('img/ny.jpg');
+  width: 100%;
+  padding: 20px;
+}
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1><strong>Online Airlines</strong></h1>
+  <p>A <b>responsible</b> airlines for every customer.</p>
+</div>
+
+<div class="navbar">
+  <a href="#" class="active">Home</a>
+  <a href="signin.html">SignIn</a>
+  <a href="signup.html">SignUp</a>
+  <a href="check.html" class="right">Check Flight</a>
+</div>
+
+<div class="row">
+  <div class="side">
+    <h2>Famous Places :</h2>
+    <h5>Singapore : </h5>
+    <div class="fakeimg1" style="height:200px;"></div>
+    <p>Singapore, an island city-state off southern Malaysia, is a global financial center with a tropical climate and multicultural population.</p>
+
+    <h5>Paris :</h5>
+    <div class="fakeimg2" style="height:200px;"></div>
+    <p>Paris, France's capital, is a major European city and a global center for art, fashion, gastronomy and culture.</p>
+    
+    <h5>London :</h5>
+    <div class="fakeimg3" style="height:200px;"></div>
+    <p>London, the capital of England and the United Kingdom, is a 21st-century city with history stretching back to Roman times.</p>
+    
+    <h5>New York :</h5>
+    <div class="fakeimg4" style="height:200px;"></div>
+    <p>New York City comprises 5 boroughs sitting where the Hudson River meets the Atlantic Ocean. </p>
+    
+    
+  </div>
+  <div class="main">
+    <h2>The Preferred Airline</h2>
+    <div class="side1" style="height:200px;"></div>
+    <p>Prachi Airlines is India’s largest passenger airline with a market share of 48.2% as of September, 2019. We primarily operate in India’s domestic air travel market as a low-cost carrier with focus on our three pillars – offering low fares, being on-time and delivering a courteous and hassle-free experience. IndiGo has become synonymous with being on-time.</p>
+    <br>
+    <h2>Great Place to Work</h2>
+    <div class="side2" style="height:200px;"></div>
+    <p>Being courteous and hassle free starts with being a hassle-free place to work. A highly engaged and motivated workforce leads to higher levels of customer service. Our state-of-the-art ‘ifly’ facility is designed to deliver a real-time training experience to all our new recruits. This training facility is considered to be one the best aviation training facilities in India. With our people-friendly culture at the heart of all we do, we continuously help the company staff find work-life balance. Ten years in a row, IndiGo continues to be amongst the best organizations to work for in India and has been named Aon’s Best Employer, 2017</p>
+    <br>
+    <h2>Most efficient</h2>
+    <div class="side3" style="height:200px;"></div>
+    <p>Since our inception in August 2006, we have grown from a carrier with one plane to a fleet of 248 aircraft today. A uniform fleet for each type of operation, high operational reliability and an award winning service make us one of the most reliable airlines in the world. IndiGo has a total destination count of 83 with 60 domestic destinations and 23 International. Fourteen codeshare destinations beyond Istanbul on Turkish Airlines are also open for sale. They include, Athens (ATH), Budapest (BUD), Brussels (BRU), Tel Aviv (TLV) , Malta (MLA), Paris (CDG) , Dublin (DUB), Copenhagen (CPH) , Prague (PRG), Vienna (VIE), Zurich (ZRH), Amsterdam (AMS),London Gatwick (LGW) and London Heathrow (LHR) .</p>
+    <br>
+    <h2>Facts and Figures</h2>
+    <ul>
+      <li>10 consecutive years of Profitable operations</li>
+      <br>
+      <li>Market share of 48.2% as of September, 2019</li>
+      <br>
+      <li>Fleet of 248 aircraft including 91 new generation A320 NEOs, 128 A320 CEOs, 22 ATRs and 7 A321 NEO.</li>
+      <br>
+      <li>Recognized as ‘Great Place to Work for in India’ for 8 years in a row (2008- 2015)</li>
+      <br>
+      <li>Named as Aon’s Best Employer for the year 2016 and 2017</li>
+    </ul>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>
+    Ⓒ Copyright 2019 Prachi Airlines. All rights reserved.</h2>
+</div>
+
+</body>
+</html>
